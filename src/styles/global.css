@@ -50,3 +50,17 @@ html {
 *:after {
   box-sizing: inherit;
 }
+
+body {
+  min-width: 100vh;
+}
+
+.logo {
+  height: 75px;
+  width: 150px;
+}
+
+footer {
+  background-color: black;
+  color: azure;
+}
