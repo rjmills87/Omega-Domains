@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap");
 
+:root {
+  --mustard: #e3b448;
+  --sage: #cbd18f;
+  --forest_green: #3a6b35;
+  --white: #fcf6f5ff;
+}
+
 /* Reset all styles to default */
 * {
   margin: 0;
@@ -12,6 +19,7 @@ html {
   font-size: 16px;
   line-height: 1.5;
   font-family: "Noto Sans", sans-serif;
+  background-color: var(--white);
 }
 
 /* Remove list styles */
@@ -61,6 +69,6 @@ body {
 }
 
 footer {
-  background-color: black;
-  color: azure;
+  background-color: var(--forest_green);
+  color: var(--white);
 }
