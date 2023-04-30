@@ -1,6 +1,17 @@
 ---
+import FooterNavigation from "./FooterNavigation.astro";
 ---
 
+<style>
+  .footer-nav {
+    display: flex;
+    justify-content: space-evenly;
+  }
+</style>
+
 <footer>
+  <nav class="footer-nav">
+    <FooterNavigation />
+  </nav>
   <p>Omega Domains 2023</p>
 </footer>
