@@ -2,9 +2,15 @@
 import logo from "../images/Logo-1.png";
 ---
 
-<div class="nav-links">
+<div class="header-links">
   <img class="logo" src={logo} alt="Omega Domains Logo" />
-  <a href="/">Domain Names</a>
-  <a href="/">Websites & Hosting</a>
-  <a href="/">Email & Office</a>
+  <a class="header-link" href="/">Domain Names</a>
+  <a class="header-link" href="/">Websites & Hosting</a>
+  <a class="header-link" href="/">Email & Office</a>
 </div>
+
+<style>
+  .header-link {
+    color: var(--black);
+  }
+</style>

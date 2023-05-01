@@ -1,28 +1,55 @@
 ---
 import FooterNavigation from "./FooterNavigation.astro";
 import Socials from "./Socials.astro";
+import Disclaimer from "./Disclaimer.astro";
 ---
 
+<footer>
+  <div class="footer-container">
+    <nav class="footer-nav">
+      <FooterNavigation />
+    </nav>
+    <div class="footer-social">
+      <Socials />
+    </div>
+    <div class="footer-disclaimer">
+      <Disclaimer />
+    </div>
+    <p class="footer-text">Omega Domains 2023</p>
+  </div>
+</footer>
+
 <style>
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 2.5rem;
+  }
+
   .footer-nav {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding: 1rem 0rem;
   }
 
   .footer-social {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem;
+    padding: 1rem 0rem;
+  }
+
+  .footer-disclaimer {
+    display: flex;
+    justify-content: space-between;
+    border-color: var(--white);
+    border-top: solid 0.1rem;
+    padding: 1rem 0rem;
+  }
+
+  .footer-text {
+    text-align: center;
+    font-weight: bold;
+    padding: 1rem 0rem;
   }
 </style>
-
-<footer>
-  <nav class="footer-nav">
-    <FooterNavigation />
-  </nav>
-  <div class="footer-social">
-    <Socials />
-  </div>
-  <p>Omega Domains 2023</p>
-</footer>
