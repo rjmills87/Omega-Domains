@@ -3,8 +3,9 @@
 :root {
   --mustard: #e3b448;
   --sage: #cbd18f;
-  --forest_green: #3a6b35;
+  --forest_green: hsl(114, 34%, 31%);
   --white: #fcf6f5ff;
+  --black: #000000;
 }
 
 /* Reset all styles to default */
@@ -64,12 +65,14 @@ body {
   min-width: 100vh;
 }
 
-.logo {
+.logo,
+.footer-logo {
   height: 75px;
   width: 150px;
 }
 
 footer {
-  background-color: var(--forest_green);
+  background-color: var(--black);
   color: var(--white);
+  padding-top: 1.5rem;
 }

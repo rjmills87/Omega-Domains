@@ -1,2 +1,30 @@
 ---
+import invertLogo from "../images/Logo-invert.png";
+import facebookBlackLogo from "../images/facebook-black.png";
+import twitterBlackLogo from "../images/twitter-black.png";
+import instagramBlackLogo from "../images/instagram-black.png";
 ---
+
+<img class="footer-logo" src={invertLogo} alt="Omega Domains Logo " />
+<div class="social-logos">
+  <a href=""
+    ><img class="social-logo" src={facebookBlackLogo} alt="Facebook Logo" /></a
+  >
+  <a href=""
+    ><img class="social-logo" src={twitterBlackLogo} alt="Twitter Logo" /></a
+  >
+  <a href=""
+    ><img
+      class="social-logo"
+      src={instagramBlackLogo}
+      alt="Instagram Logo"
+    /></a
+  >
+</div>
+
+<style>
+  .social-logo {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+</style>

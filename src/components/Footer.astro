@@ -1,5 +1,6 @@
 ---
 import FooterNavigation from "./FooterNavigation.astro";
+import Socials from "./Socials.astro";
 ---
 
 <style>
@@ -7,11 +8,21 @@ import FooterNavigation from "./FooterNavigation.astro";
     display: flex;
     justify-content: space-evenly;
   }
+
+  .footer-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+  }
 </style>
 
 <footer>
   <nav class="footer-nav">
     <FooterNavigation />
   </nav>
+  <div class="footer-social">
+    <Socials />
+  </div>
   <p>Omega Domains 2023</p>
 </footer>
