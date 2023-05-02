@@ -71,6 +71,10 @@ body {
   width: 150px;
 }
 
+header {
+  background-color: var(--white);
+}
+
 footer {
   background-color: var(--black);
   color: var(--white);
