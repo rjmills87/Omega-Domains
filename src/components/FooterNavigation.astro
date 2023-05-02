@@ -68,6 +68,12 @@
 </div>
 
 <style>
+  .nav-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
   .nav-heading {
     font-weight: bold;
     padding-bottom: 1rem;
@@ -80,5 +86,37 @@
   .nav-link :hover {
     border-color: var(--white);
     border-bottom: solid 0.1rem;
+  }
+
+  @media screen and (max-width: 1140px) {
+    .nav-links,
+    .nav-heading {
+      text-align: center;
+    }
+
+    .nav-column {
+      padding-bottom: 1.5rem;
+      border-top: solid var(--white);
+    }
+
+    .nav-heading {
+      font-size: 1.75rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.4rem;
+    }
+
+    .nav-link {
+      font-size: 1.25rem;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .nav-heading {
+      font-size: 2.25rem;
+    }
+
+    .nav-link {
+      font-size: 1.5rem;
+    }
   }
 </style>
