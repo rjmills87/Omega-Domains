@@ -9,9 +9,11 @@ import Disclaimer from "./Disclaimer.astro";
     <nav class="footer-nav">
       <FooterNavigation />
     </nav>
+    <hr class="footer-hr" />
     <div class="footer-social">
       <Socials />
     </div>
+    <hr class="footer-hr" />
     <div class="footer-disclaimer">
       <Disclaimer />
     </div>
@@ -32,6 +34,13 @@ import Disclaimer from "./Disclaimer.astro";
     padding: 1rem 0rem;
   }
 
+  .footer-hr {
+    height: 1px;
+    border: none;
+    background: var(--white);
+    padding-bottom: 1re;
+  }
+
   .footer-social {
     display: flex;
     justify-content: space-between;
@@ -42,8 +51,6 @@ import Disclaimer from "./Disclaimer.astro";
   .footer-disclaimer {
     display: flex;
     justify-content: space-between;
-    border-color: var(--white);
-    border-top: solid 0.1rem;
     padding: 1rem 0rem;
   }
 
