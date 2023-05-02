@@ -2,8 +2,8 @@
 import logo from "../images/Logo-1.png";
 ---
 
+<img class="logo" src={logo} alt="Omega Domains Logo" />
 <div class="header-links">
-  <img class="logo" src={logo} alt="Omega Domains Logo" />
   <a class="header-link" href="/">Domain Names</a>
   <a class="header-link" href="/">Websites & Hosting</a>
   <a class="header-link" href="/">Email & Office</a>
@@ -12,9 +12,11 @@ import logo from "../images/Logo-1.png";
 <style>
   .header-links {
     display: flex;
+    flex: 1;
     align-items: center;
-    justify-content: space-between;
-    width: 50%;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    padding-left: 3rem;
   }
   .header-link {
     color: var(--black);
