@@ -2,11 +2,11 @@
 import logo from "../images/Logo-1.png";
 ---
 
-<img class="logo" src={logo} alt="Omega Domains Logo" />
+<a href="#"><img class="logo" src={logo} alt="Omega Domains Logo" /></a>
 <div class="header-links">
-  <a class="header-link" href="/">Domain Names</a>
-  <a class="header-link" href="/">Websites & Hosting</a>
-  <a class="header-link" href="/">Email & Office</a>
+  <a class="header-link" href="#">Domain Names</a>
+  <a class="header-link" href="#">Websites & Hosting</a>
+  <a class="header-link" href="#">Email & Office</a>
 </div>
 
 <style>
@@ -29,5 +29,15 @@ import logo from "../images/Logo-1.png";
 
   .header-link:hover {
     color: var(--forest_green);
+  }
+
+  @media screen and (max-width: 480px) {
+    .logo {
+      height: 6.5rem;
+      width: 12.5rem;
+    }
+    .header-links {
+      visibility: hidden;
+    }
   }
 </style>
