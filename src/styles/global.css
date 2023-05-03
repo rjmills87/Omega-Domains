@@ -4,8 +4,10 @@
   --mustard: #e3b448;
   --sage: #cbd18f;
   --forest_green: hsl(114, 34%, 31%);
-  --white: #fcf6f5ff;
+  --white: #fcf6f5;
   --black: #000000;
+  --grey: #808080;
+  --platinum: #e5e4e2;
 }
 
 /* Reset all styles to default */
@@ -74,4 +76,5 @@ footer {
   background-color: var(--black);
   color: var(--white);
   padding-top: 1.5rem;
+  margin-top: 2rem;
 }
