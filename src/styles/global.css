@@ -65,12 +65,6 @@ body {
   min-width: 100vh;
 }
 
-.logo,
-.footer-logo {
-  height: 75px;
-  width: 150px;
-}
-
 header {
   background-color: var(--white);
   padding-bottom: 1.5rem;
