@@ -4,9 +4,9 @@ import logo from "../images/Logo-1.png";
 
 <a href="#"><img class="logo" src={logo} alt="Omega Domains Logo" /></a>
 <div class="header-links">
-  <a class="header-link" href="#">Domain Names</a>
-  <a class="header-link" href="#">Websites & Hosting</a>
-  <a class="header-link" href="#">Email & Office</a>
+  <button class="header-link">Domain Names</button>
+  <button class="header-link">Websites & Hosting</button>
+  <button class="header-link">Email & Office</button>
 </div>
 
 <style>
@@ -23,11 +23,13 @@ import logo from "../images/Logo-1.png";
   }
   .header-link {
     color: var(--black);
+    background-color: var(--white);
     font-weight: bold;
   }
 
   .header-link:hover {
     color: var(--forest_green);
+    cursor: pointer;
   }
 
   @media screen and (max-width: 480px) {
