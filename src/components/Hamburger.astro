@@ -6,3 +6,26 @@
   <span class="line"></span>
   <span class="line"></span>
 </div>
+
+<style>
+  .hamburger {
+    padding-right: 20px;
+    cursor: pointer;
+    visibility: hidden;
+  }
+
+  .hamburger .line {
+    display: block;
+    width: 45px;
+    height: 4px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    background-color: var(--black);
+  }
+
+  @media screen and (max-width: 480px) {
+    .hamburger {
+      visibility: visible;
+    }
+  }
+</style>
