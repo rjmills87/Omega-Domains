@@ -16,8 +16,11 @@
   <style>
     .grid-container {
       display: grid;
+      background-color: var(--black);
       grid-template-columns: auto auto auto auto;
       margin: 0 2.5rem;
+      border: solid var(--black) 1px;
+      grid-gap: 1px;
     }
 
     .grid-item {
@@ -25,9 +28,25 @@
       align-items: center;
       justify-content: center;
       background-color: var(--platinum);
-      border: 1px solid var(--black);
       text-align: center;
       padding: 24px;
+    }
+
+    .grid-item:hover {
+      background: var(--forest_green);
+      color: var(--platinum);
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: 1140px) {
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto auto;
+      }
+
+      .grid-item {
+        padding: 18px;
+      }
     }
   </style>
 </div>
