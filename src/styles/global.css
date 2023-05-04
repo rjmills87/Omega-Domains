@@ -78,3 +78,7 @@ footer {
   padding-top: 1.5rem;
   margin-top: 2rem;
 }
+
+.content-block-1 {
+  display: flex;
+}

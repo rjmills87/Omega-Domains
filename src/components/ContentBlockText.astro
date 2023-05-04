@@ -1,0 +1,17 @@
+---
+const { titleHeading, textHeading, textContent, btnText } = Astro.props;
+---
+
+<div class="container">
+  <h2>{titleHeading}</h2>
+  <h3>{textHeading}</h3>
+  <p>{textContent}</p>
+  <button>{btnText}</button>
+</div>
+
+<style>
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+</style>
