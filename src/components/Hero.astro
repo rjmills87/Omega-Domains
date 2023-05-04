@@ -34,7 +34,7 @@ import heroImage from "../images/domain-names.svg";
   }
 
   .hero-text-container {
-    margin-left: 1.5rem;
+    margin-left: 3rem;
   }
 
   .hero-heading-1 {
@@ -57,6 +57,10 @@ import heroImage from "../images/domain-names.svg";
     cursor: pointer;
   }
 
+  .hero-btn :hover {
+    background: var(--sage);
+  }
+
   .hero-para-1 {
     font-size: 1rem;
     margin-top: 24px;
@@ -68,11 +72,47 @@ import heroImage from "../images/domain-names.svg";
   }
 
   .img-container {
-    margin-right: 1.5rem;
+    margin-right: 3rem;
   }
 
   .hero-img {
     width: 550px;
     height: 450px;
+  }
+
+  @media screen and (max-width: 1140px) {
+    .hero {
+      flex-direction: column;
+    }
+
+    .hero-text-container {
+      margin: 3rem;
+      text-align: center;
+    }
+
+    .hero-heading-1 {
+      font-size: 1.25rem;
+    }
+
+    .hero-heading-2 {
+      font-size: 1.75rem;
+      width: auto;
+      margin: 1.5rem 2rem;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .hero-heading-1 {
+      font-size: 1.25rem;
+    }
+    .hero-heading-2 {
+      font-size: 1.5rem;
+    }
+
+    .hero-img {
+      width: 300px;
+      height: 200px;
+      padding-bottom: 1.5rem;
+    }
   }
 </style>
