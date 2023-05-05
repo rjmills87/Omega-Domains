@@ -3,15 +3,29 @@ const { titleHeading, textHeading, textContent, btnText } = Astro.props;
 ---
 
 <div class="container">
-  <h2>{titleHeading}</h2>
-  <h3>{textHeading}</h3>
-  <p>{textContent}</p>
-  <button>{btnText}</button>
+  <h2 class="content-title">{titleHeading}</h2>
+  <h3 class="content-heading">{textHeading}</h3>
+  <p class="content-para">{textContent}</p>
+  <button class="content-btn">{btnText}</button>
 </div>
 
 <style>
   .container {
     display: flex;
     flex-direction: column;
+  }
+
+  .content-btn {
+    background-color: var(--forest_green);
+    color: var(--platinum);
+    font-size: 1rem;
+    padding: 15px 40px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .content-btn:hover {
+    background-color: var(--sage);
+    color: var(--forest_green);
   }
 </style>
