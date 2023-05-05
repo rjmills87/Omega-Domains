@@ -9,7 +9,9 @@ const { titleHeading, textHeading, textContent, btnText, image, imageAltText } =
   <p class="content-para">{textContent}</p>
   <button class="content-btn">{btnText}</button>
 </div>
+<div class="img-container">
 <img class="content-img" src={image} alt={imageAltText} />
+</div>
 
 <style>
   .container {
@@ -42,6 +44,7 @@ const { titleHeading, textHeading, textContent, btnText, image, imageAltText } =
     color: var(--platinum);
     font-size: 1rem;
     padding: 15px 40px;
+    border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
   }
@@ -49,6 +52,10 @@ const { titleHeading, textHeading, textContent, btnText, image, imageAltText } =
   .content-btn:hover {
     background-color: var(--sage);
     color: var(--forest_green);
+  }
+
+   .img-container {
+    width: 50%;
   }
 
   .content-img {

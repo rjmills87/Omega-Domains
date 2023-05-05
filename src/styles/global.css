@@ -80,14 +80,16 @@ footer {
   margin-top: 2rem;
 }
 
-.content-block-1 {
+.content-block-1,
+.content-block-3 {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   margin: 3.6rem 3rem;
 }
 
-.content-block-2 {
+.content-block-2,
+.content-block-4 {
   display: flex;
   align-items: center;
   justify-content: space-evenly;

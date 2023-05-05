@@ -7,6 +7,8 @@ import ContentBlockImageRight from "../components/ContentBlockImageRight.astro";
 import ContentBlockImageLeft from "../components/ContentBlockImageLeft.astro";
 import onboardingImage from "../images/onboarding.svg";
 import emailsImage from "../images/emails.svg";
+import cloudImage from "../images/cloud.svg";
+import webShoppingImage from "../images/web-shopping.svg";
 const pageName = " Omega Domains Home Page";
 ---
 
@@ -32,6 +34,26 @@ const pageName = " Omega Domains Home Page";
       btnText="See Email Plans"
       image={emailsImage}
       imageAltText="Person looking emails on a smartphone"
+    />
+  </div>
+  <div class="content-block-3">
+    <ContentBlockImageRight
+      titleHeading="Hosting"
+      textHeading="Fast, secure and always online."
+      textContent="Already have a website? Give it the home it deserves. With free SSL, industry-leading load times, guaranteed 99.9% uptime and expert, 24/7 support, your site couldn't ask for more."
+      btnText="See Web Hosting Plans"
+      image={cloudImage}
+      imageAltText="Image of laptop"
+    />
+  </div>
+  <div class="content-block-4">
+    <ContentBlockImageLeft
+      titleHeading="Online Store"
+      textHeading="Sell your products to anyone, anywhere."
+      textContent="Whether you sell home décor or hip hop beats, our Online Store is built to work for you. Easily create a store that fits your brand, get found with integrated marketing tools and do it all from your smartphone."
+      btnText="Start for Free"
+      image={webShoppingImage}
+      imageAltText="Picture of a woman shopping online "
     />
   </div>
 </PageLayout>
