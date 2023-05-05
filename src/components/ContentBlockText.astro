@@ -11,8 +11,28 @@ const { titleHeading, textHeading, textContent, btnText } = Astro.props;
 
 <style>
   .container {
-    display: flex;
-    flex-direction: column;
+    margin-left: 3rem;
+  }
+
+  .content-title {
+    font-size: 1rem;
+    margin-bottom: 16px;
+  }
+
+  .content-heading {
+    font-family: "Yeseva One", cursive;
+    font-size: 2.5rem;
+    width: 75%;
+    margin-bottom: 16px;
+    line-height: 1.25em;
+  }
+
+  .content-para {
+    font-size: 1rem;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    width: 75%;
+    line-height: 1.4rem;
   }
 
   .content-btn {
@@ -27,5 +47,15 @@ const { titleHeading, textHeading, textContent, btnText } = Astro.props;
   .content-btn:hover {
     background-color: var(--sage);
     color: var(--forest_green);
+  }
+
+  @media screen and (max-width: 1140px) {
+    .container {
+      margin: 0;
+    }
+
+    .content-para {
+      width: auto;
+    }
   }
 </style>
