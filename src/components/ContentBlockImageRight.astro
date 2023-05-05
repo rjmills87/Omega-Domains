@@ -1,5 +1,6 @@
 ---
-const { titleHeading, textHeading, textContent, btnText } = Astro.props;
+const { titleHeading, textHeading, textContent, btnText, image, imageAltText } =
+  Astro.props;
 ---
 
 <div class="container">
@@ -8,6 +9,7 @@ const { titleHeading, textHeading, textContent, btnText } = Astro.props;
   <p class="content-para">{textContent}</p>
   <button class="content-btn">{btnText}</button>
 </div>
+<img class="content-img" src={image} alt={imageAltText} />
 
 <style>
   .container {
@@ -49,6 +51,12 @@ const { titleHeading, textHeading, textContent, btnText } = Astro.props;
     color: var(--forest_green);
   }
 
+  .content-img {
+    width: 550px;
+    height: 450px;
+    margin-right: 3rem;
+  }
+
   @media screen and (max-width: 1140px) {
     .container {
       margin: 0;
@@ -56,6 +64,12 @@ const { titleHeading, textHeading, textContent, btnText } = Astro.props;
 
     .content-para {
       width: auto;
+    }
+
+    .content-img {
+      width: 350px;
+      height: 250px;
+      margin-top: 1.6rem;
     }
   }
 </style>

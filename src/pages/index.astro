@@ -3,8 +3,7 @@ import PageLayout from "../layouts/PageLayout.astro";
 import SearchBar from "../components/SearchBar.astro";
 import Hero from "../components/Hero.astro";
 import ProductGrid from "../components/ProductGrid.astro";
-import ContentBlockImage from "../components/ContentBlockImage.astro";
-import ContentBlockText from "../components/ContentBlockText.astro";
+import ContentBlockImageRight from "../components/ContentBlockImageRight.astro";
 import onboardingImage from "../images/onboarding.svg";
 const pageName = " Omega Domains Home Page";
 ---
@@ -14,13 +13,11 @@ const pageName = " Omega Domains Home Page";
   <Hero />
   <ProductGrid />
   <div class="content-block-1">
-    <ContentBlockText
+    <ContentBlockImageRight
       titleHeading="Domain + Professional Email"
       textHeading="Build your brand online."
       textContent="Get a memorable online address — .com or .co.uk, it’s your choice — and back it up with a matching email address your customers can trust. Get both, plus expert 24x7 support, with this bundle for just £1.50/mo."
       btnText="Get Started"
-    />
-    <ContentBlockImage
       image={onboardingImage}
       imageAltText="Person looking at various website pages"
     />
