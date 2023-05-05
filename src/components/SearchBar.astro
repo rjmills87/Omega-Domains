@@ -1,14 +1,10 @@
 ---
+const { placeHolder, barClass, btnClass } = Astro.props;
 ---
 
 <form class="search" action="#">
-  <input
-    class="search-bar"
-    type="text"
-    placeholder="Search for your next big idea..."
-    name="search"
-  />
-  <button class="search-btn" type="submit">Search</button>
+  <input class={barClass} type="text" placeholder={placeHolder} name="search" />
+  <button class={btnClass} type="submit">Search</button>
 </form>
 
 <style>
@@ -39,5 +35,58 @@
   .search-btn:hover {
     background-color: var(--sage);
     color: var(--forest_green);
+  }
+
+  .search-bar-banner {
+    width: 35%;
+    height: 3rem;
+    background-color: var(--platinum);
+    color: var(--forest_green);
+    font-size: 1.2rem;
+    margin-right: -5px;
+    padding-left: 1rem;
+  }
+
+  .search-btn-banner {
+    cursor: pointer;
+    width: 10%;
+    height: 3rem;
+    font-size: 1.2rem;
+    color: var(--platinum);
+    background-color: var(--forest_green);
+    transition: 0.3s;
+  }
+
+  .search-btn-banner:hover {
+    background-color: var(--black);
+    color: var(--platinum);
+  }
+
+  @media screen and (max-width: 1140px) {
+    .search-bar-banner {
+      width: 75%;
+      font-size: 1rem;
+      padding: 0%;
+    }
+
+    .search-btn-banner {
+      width: 15%;
+      font-size: 1rem;
+    }
+  }
+  }
+
+  @media screen and (max-width: 480px) {
+    .search-bar-banner {
+      width: 75%;
+      font-size: 0.7rem;
+      padding: 0%;
+    }
+
+    .search-btn-banner {
+      width: 15%;
+      font-size: 0.7rem;
+      padding: 10px;
+    }
   }
 </style>

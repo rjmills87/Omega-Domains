@@ -1,0 +1,47 @@
+---
+import SearchBar from "./SearchBar.astro";
+---
+
+<div class="search-banner">
+  <h2 class="heading">It all starts with a domain</h2>
+  <p class="para">
+    Bring your idea to life by securing a domain and establishing your online
+    presence.
+  </p>
+  <SearchBar
+    placeHolder="Search for your perfect domain..."
+    barClass="search-bar-banner"
+    btnClass="search-btn-banner"
+  />
+</div>
+
+<style>
+  .search-banner {
+    background-color: var(--mustard);
+    text-align: center;
+    padding: 4.5rem 3.5rem;
+  }
+
+  .heading {
+    font-family: "Yeseva One", cursive;
+    font-size: 3rem;
+    margin: 24px 0px 32px 0px;
+  }
+
+  .para {
+    font-size: 1rem;
+    margin-bottom: 24px;
+  }
+
+  @media screen and (max-width: 1140px) {
+    .search-banner {
+      padding-bottom: 2rem;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .search-banner {
+      padding-bottom: 2rem;
+    }
+  }
+</style>
