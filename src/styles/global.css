@@ -87,6 +87,13 @@ footer {
   margin: 3.6rem 3rem;
 }
 
+.content-block-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 3.6 0;
+}
+
 @media screen and (max-width: 1140px) {
   .content-block-1 {
     flex-direction: column;

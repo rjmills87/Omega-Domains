@@ -4,7 +4,9 @@ import SearchBar from "../components/SearchBar.astro";
 import Hero from "../components/Hero.astro";
 import ProductGrid from "../components/ProductGrid.astro";
 import ContentBlockImageRight from "../components/ContentBlockImageRight.astro";
+import ContentBlockImageLeft from "../components/ContentBlockImageLeft.astro";
 import onboardingImage from "../images/onboarding.svg";
+import emailsImage from "../images/emails.svg";
 const pageName = " Omega Domains Home Page";
 ---
 
@@ -20,6 +22,16 @@ const pageName = " Omega Domains Home Page";
       btnText="Get Started"
       image={onboardingImage}
       imageAltText="Person looking at various website pages"
+    />
+  </div>
+  <div class="content-block-2">
+    <ContentBlockImageLeft
+      titleHeading="Professional Email"
+      textHeading="Build on your success."
+      textContent="Everyone has email, but that doesn’t mean all email is the same. Customers are nine times more likely to choose a business with a professional address like you@YourBusiness.com."
+      btnText="See Email Plans"
+      image={emailsImage}
+      imageAltText="Person looking emails on a smartphone"
     />
   </div>
 </PageLayout>
