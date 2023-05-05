@@ -81,7 +81,8 @@ footer {
 }
 
 .content-block-1,
-.content-block-3 {
+.content-block-3,
+.content-block-5 {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
