@@ -1,0 +1,14 @@
+---
+const { titleHeading, textHeading, textContent, btnText, image, imageAltText } =
+  Astro.props;
+---
+
+<img class="content-img" src={image} alt={imageAltText} />
+<div class="container">
+  <h2 class="content-title">{titleHeading}</h2>
+  <h3 class="content-heading">{textHeading}</h3>
+  <p class="content-para">{textContent}</p>
+  <button class="content-btn">{btnText}</button>
+</div>
+
+<style></style>
