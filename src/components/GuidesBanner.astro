@@ -1,0 +1,65 @@
+---
+import womanImg from "../images/Woman-img.png";
+import logo from "../images/Logo-1.png";
+import SearchBar from "./SearchBar.astro";
+---
+
+<div class="container">
+  <div class="text-container">
+    <img class="logo" src={logo} alt="Omega Domains Logo" /><span>Guides</span>
+    <h2 class="headline">Why use Omega Domains?</h2>
+    <p class="para-1">
+      Because we know that even the best technology is only as good as the
+      people behind it. That’s why we offer expert, 24/7 phone support, plus a
+      lot more.
+    </p>
+    <p class="para-2">Call our technical support team at 020 1234 5678.</p>
+    <SearchBar
+      placeHolder="Type a question..."
+      barClass="search-bar-guides"
+      btnClass="search-btn-guides"
+    />
+    <div class="links">
+      <a href="#" class="link">View How-To Articles</a>
+      <a href="#" class="link">Read Our Blog</a>
+    </div>
+  </div>
+  <div class="img-container">
+    <img
+      class="woman-img"
+      src={womanImg}
+      alt="Image of a woman poointing towards our guide section"
+    />
+  </div>
+</div>
+
+<style>
+  .container {
+    background-color: var(--sage);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .logo {
+    height: 3rem;
+    width: 5.5rem;
+  }
+
+  .headline {
+    font-family: "Yeseva One", cursive;
+  }
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-container {
+  }
+
+  .woman-img {
+    width: 400px;
+    height: 550px;
+  }
+</style>
