@@ -1,8 +1,8 @@
 ---
-const { placeHolder, barClass, btnClass } = Astro.props;
+const { placeHolder,searchClass, barClass, btnClass } = Astro.props;
 ---
 
-<form class="search" action="#">
+<form class={searchClass} action="#">
   <input class={barClass} type="text" placeholder={placeHolder} name="search" />
   <button class={btnClass} type="submit">Search</button>
 </form>
@@ -39,6 +39,10 @@ const { placeHolder, barClass, btnClass } = Astro.props;
 
   /* Domain Sesarch Banner Search Bar Styles */
 
+  .search-domain {
+    text-align: center;
+  }
+
   .search-bar-banner {
     width: 35%;
     height: 3rem;
@@ -66,17 +70,22 @@ const { placeHolder, barClass, btnClass } = Astro.props;
 
   /* Guides Banner Search Bar Styles */
 
+  .search-guides {
+    width: 100%;
+  }
+
   .search-bar-guides {
-    width: auto;
+    width: 80%;
     height: 3rem;
     background-color: var(--platinum);
     color: var(--forest_green);
     font-size: 1.2rem;
+    
   }
 
   .search-btn-guides  {
     cursor: pointer;
-    width: 10%;
+    width: 20%;
     height: 3rem;
     font-size: 1.2rem;
     color: var(--platinum);
