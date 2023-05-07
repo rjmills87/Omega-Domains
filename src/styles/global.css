@@ -27,10 +27,6 @@ html {
 }
 
 /* Remove list styles */
-ul,
-ol {
-  list-style: none;
-}
 
 /* Remove text decoration */
 a {
