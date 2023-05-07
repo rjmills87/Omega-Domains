@@ -34,6 +34,7 @@ import SearchBar from "./SearchBar.astro";
       src={womanImg}
       alt="Image of a woman poointing towards our guide section"
     />
+    <span class="img-text">Katie H. <br />Omega Guide</span>
   </div>
 </div>
 
@@ -51,6 +52,7 @@ import SearchBar from "./SearchBar.astro";
     display: flex;
     align-items: center;
     gap: 3px;
+    margin-bottom: 16px;
   }
 
   .logo {
@@ -80,11 +82,12 @@ import SearchBar from "./SearchBar.astro";
   }
 
   .para-1 {
-    width: 80%;
+    width: 70%;
   }
 
   .img-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
     justify-content: center;
     align-items: center;
     margin-right: 3rem;
@@ -96,12 +99,19 @@ import SearchBar from "./SearchBar.astro";
     height: 550px;
   }
 
+  .img-text {
+    font-size: 0.75rem;
+    margin-top: 1.5rem;
+    display: flex;
+    align-self: flex-start;
+  }
+
   .links {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    margin-top: 16px;
+    margin-top: 3rem;
   }
 
   .link {
@@ -112,5 +122,14 @@ import SearchBar from "./SearchBar.astro";
   .link:hover {
     font-weight: 700;
     text-decoration: underline;
+  }
+
+  @media screen and (max-width: 1140px) {
+    .guides-container {
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
   }
 </style>
