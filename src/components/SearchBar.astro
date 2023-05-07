@@ -37,6 +37,8 @@ const { placeHolder, barClass, btnClass } = Astro.props;
     color: var(--forest_green);
   }
 
+  /* Domain Sesarch Banner Search Bar Styles */
+
   .search-bar-banner {
     width: 35%;
     height: 3rem;
@@ -58,6 +60,32 @@ const { placeHolder, barClass, btnClass } = Astro.props;
   }
 
   .search-btn-banner:hover {
+    background-color: var(--black);
+    color: var(--platinum);
+  }
+
+  /* Guides Banner Search Bar Styles */
+
+  .search-bar-guides {
+    width: auto;
+    height: 3rem;
+    background-color: var(--platinum);
+    color: var(--forest_green);
+    font-size: 1.2rem;
+  }
+
+  .search-btn-guides  {
+    cursor: pointer;
+    width: 10%;
+    height: 3rem;
+    font-size: 1.2rem;
+    color: var(--platinum);
+    background-color: var(--forest_green);
+    transition: 0.3s;
+    margin-left: -5px;
+  }
+
+   .search-btn-guides:hover {
     background-color: var(--black);
     color: var(--platinum);
   }
