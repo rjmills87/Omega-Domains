@@ -1,7 +1,16 @@
 ---
+import upArrow from "../images/Arrow-up.svg";
+import downArrow from "../images/Arrow-down.svg";
 ---
 
-<button class="accordion">Why do I need a website for my business?</button>
+<button class="accordion"
+  >Why do I need a website for my business? <img
+    class="up-arrow"
+    src={upArrow}
+    alt="up arrow"
+  />
+  <img class="down-arrow" src={downArrow} alt="down arrow" /></button
+>
 <div class="panel">
   <p>
     Even if they only serve their hometown, small local businesses require a
@@ -18,7 +27,12 @@
 </div>
 
 <button class="accordion"
-  >What does Omega do to help small businesses owners succeed?</button
+  >What does Omega do to help small businesses owners succeed? <img
+    class="up-arrow"
+    src={upArrow}
+    alt="up arrow"
+  />
+  <img class="down-arrow" src={downArrow} alt="down arrow" /></button
 >
 <div class="panel">
   <p>
@@ -33,7 +47,14 @@
   </p>
 </div>
 
-<button class="accordion">Why do I need a professional email?</button>
+<button class="accordion"
+  >Why do I need a professional email? <img
+    class="up-arrow"
+    src={upArrow}
+    alt="up arrow"
+  />
+  <img class="down-arrow" src={downArrow} alt="down arrow" /></button
+>
 <div class="panel">
   <p>
     Switching from a free email to a domain-based email can offer several
@@ -41,13 +62,20 @@
     such as lily@lilysbikes.com versus a generic address like
     lilysbikestexas84@notmail.com. Domain-based email also provides robust
     security features with top-tier spam and virus filters. Additionally, having
-    a personalized email address can be an effective way to promote your
+    a personalized email address can be an effective way to promo te your
     business, as each email you send includes your website address and
     encourages recipients to visit your site.
   </p>
 </div>
 
-<button class="accordion">Why should I get domain name from Omega?</button>
+<button class="accordion"
+  >Why should I get domain name from Omega? <img
+    class="up-arrow"
+    src={upArrow}
+    alt="up arrow"
+  />
+  <img class="down-arrow" src={downArrow} alt="down arrow" /></button
+>
 <div class="panel">
   <p>
     Omega is a trusted domain registrar and the world's largest, providing the
@@ -59,7 +87,12 @@
 </div>
 
 <button class="accordion"
-  >What's the benefit of using the Omega Website Builder?</button
+  >What's the benefit of using the Omega Website Builder? <img
+    class="up-arrow"
+    src={upArrow}
+    alt="up arrow"
+  />
+  <img class="down-arrow" src={downArrow} alt="down arrow" /></button
 >
 <div class="panel">
   <p>
@@ -75,7 +108,12 @@
 </div>
 
 <button class="accordion"
-  >What makes Omega's Web Hosting the best in the world?</button
+  >What makes Omega's Web Hosting the best in the world? <img
+    class="up-arrow"
+    src={upArrow}
+    alt="up arrow"
+  />
+  <img class="down-arrow" src={downArrow} alt="down arrow" /></button
 >
 <div class="panel">
   <p>
@@ -89,7 +127,12 @@
 </div>
 
 <button class="accordion"
-  >Why should I choose Omega for my Wordpress website?</button
+  >Why should I choose Omega for my Wordpress website? <img
+    class="up-arrow"
+    src={upArrow}
+    alt="up arrow"
+  />
+  <img class="down-arrow" src={downArrow} alt="down arrow" /></button
 >
 <div class="panel">
   <p>
@@ -104,7 +147,8 @@
 
 <button class="accordion"
   >What is the benefit of me transfering my domain, website or web hosting over
-  to Omega?</button
+  to Omega? <img class="up-arrow" src={upArrow} alt="up arrow" />
+  <img class="down-arrow" src={downArrow} alt="down arrow" /></button
 >
 <div class="panel">
   <p>
@@ -118,7 +162,14 @@
   </p>
 </div>
 
-<button class="accordion">Why should I use the Omega Logo Maker?</button>
+<button class="accordion"
+  >Why should I use the Omega Logo Maker? <img
+    class="up-arrow"
+    src={upArrow}
+    alt="up arrow"
+  />
+  <img class="down-arrow" src={downArrow} alt="down arrow" /></button
+>
 <div class="panel">
   <p>
     Omega's Logo Maker simplifies the process of creating a custom logo that
@@ -154,5 +205,15 @@
     display: none;
     background-color: white;
     overflow: hidden;
+  }
+
+  .up-arrow,
+  .down-arrow {
+    height: 25px;
+    width: 25px;
+  }
+
+  .up-arrow {
+    display: none;
   }
 </style>
