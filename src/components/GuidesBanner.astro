@@ -7,7 +7,8 @@ import SearchBar from "./SearchBar.astro";
 <div class="guides-container">
   <div class="text-container">
     <div class="logo-container">
-      <img class="logo" src={logo} alt="Omega Domains Logo" /><span>guides</span
+      <img class="logo" src={logo} alt="Omega Domains Logo" /><span
+        class="logo-text">guides</span
       >
     </div>
     <h2 class="headline">Why use Omega Domains?</h2>
@@ -58,6 +59,10 @@ import SearchBar from "./SearchBar.astro";
   .logo {
     height: 3rem;
     width: 5.5rem;
+  }
+
+  .logo-text {
+    font-size: 1rem;
   }
 
   .headline {
@@ -127,6 +132,33 @@ import SearchBar from "./SearchBar.astro";
   @media screen and (max-width: 1140px) {
     .guides-container {
       flex-direction: column;
+    }
+
+    .logo {
+      height: 3.5rem;
+      width: 6.5rem;
+    }
+
+    .logo-text {
+      font-size: 1.2rem;
+    }
+
+    .text-container {
+      align-items: center;
+      width: 65%;
+    }
+
+    .headline {
+      text-align: center;
+    }
+
+    .para-1 {
+      width: auto;
+      text-align: center;
+    }
+
+    .img-container {
+      margin-top: 3rem;
     }
   }
 
