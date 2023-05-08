@@ -1,16 +1,7 @@
 ---
-import upArrow from "../images/Arrow-up.svg";
-import downArrow from "../images/Arrow-down.svg";
 ---
 
-<button class="accordion"
-  >Why do I need a website for my business? <img
-    class="up-arrow"
-    src={upArrow}
-    alt="up arrow"
-  />
-  <img class="down-arrow" src={downArrow} alt="down arrow" /></button
->
+<button class="accordion">Why do I need a website for my business?</button>
 <div class="panel">
   <p>
     Even if they only serve their hometown, small local businesses require a
@@ -27,13 +18,8 @@ import downArrow from "../images/Arrow-down.svg";
 </div>
 
 <button class="accordion"
-  >What does Omega do to help small businesses owners succeed? <img
-    class="up-arrow"
-    src={upArrow}
-    alt="up arrow"
-  />
-  <img class="down-arrow" src={downArrow} alt="down arrow" /></button
->
+  >What does Omega do to help small businesses owners succeed?
+</button>
 <div class="panel">
   <p>
     Omega provides more than just a website building platform - we offer a
@@ -47,14 +33,7 @@ import downArrow from "../images/Arrow-down.svg";
   </p>
 </div>
 
-<button class="accordion"
-  >Why do I need a professional email? <img
-    class="up-arrow"
-    src={upArrow}
-    alt="up arrow"
-  />
-  <img class="down-arrow" src={downArrow} alt="down arrow" /></button
->
+<button class="accordion">Why do I need a professional email?</button>
 <div class="panel">
   <p>
     Switching from a free email to a domain-based email can offer several
@@ -68,14 +47,7 @@ import downArrow from "../images/Arrow-down.svg";
   </p>
 </div>
 
-<button class="accordion"
-  >Why should I get domain name from Omega? <img
-    class="up-arrow"
-    src={upArrow}
-    alt="up arrow"
-  />
-  <img class="down-arrow" src={downArrow} alt="down arrow" /></button
->
+<button class="accordion">Why should I get domain name from Omega?</button>
 <div class="panel">
   <p>
     Omega is a trusted domain registrar and the world's largest, providing the
@@ -87,13 +59,8 @@ import downArrow from "../images/Arrow-down.svg";
 </div>
 
 <button class="accordion"
-  >What's the benefit of using the Omega Website Builder? <img
-    class="up-arrow"
-    src={upArrow}
-    alt="up arrow"
-  />
-  <img class="down-arrow" src={downArrow} alt="down arrow" /></button
->
+  >What's the benefit of using the Omega Website Builder?
+</button>
 <div class="panel">
   <p>
     Omega's Website Builder is a fast and easy way to create a website that both
@@ -108,13 +75,8 @@ import downArrow from "../images/Arrow-down.svg";
 </div>
 
 <button class="accordion"
-  >What makes Omega's Web Hosting the best in the world? <img
-    class="up-arrow"
-    src={upArrow}
-    alt="up arrow"
-  />
-  <img class="down-arrow" src={downArrow} alt="down arrow" /></button
->
+  >What makes Omega's Web Hosting the best in the world?
+</button>
 <div class="panel">
   <p>
     Omega has almost two decades of experience in the web hosting industry,
@@ -127,13 +89,8 @@ import downArrow from "../images/Arrow-down.svg";
 </div>
 
 <button class="accordion"
-  >Why should I choose Omega for my Wordpress website? <img
-    class="up-arrow"
-    src={upArrow}
-    alt="up arrow"
-  />
-  <img class="down-arrow" src={downArrow} alt="down arrow" /></button
->
+  >Why should I choose Omega for my Wordpress website?
+</button>
 <div class="panel">
   <p>
     Omega provides reliable and cost-effective WordPress hosting plans,
@@ -147,9 +104,8 @@ import downArrow from "../images/Arrow-down.svg";
 
 <button class="accordion"
   >What is the benefit of me transfering my domain, website or web hosting over
-  to Omega? <img class="up-arrow" src={upArrow} alt="up arrow" />
-  <img class="down-arrow" src={downArrow} alt="down arrow" /></button
->
+  to Omega?
+</button>
 <div class="panel">
   <p>
     There are various reasons why people choose to move their online presence to
@@ -162,14 +118,7 @@ import downArrow from "../images/Arrow-down.svg";
   </p>
 </div>
 
-<button class="accordion"
-  >Why should I use the Omega Logo Maker? <img
-    class="up-arrow"
-    src={upArrow}
-    alt="up arrow"
-  />
-  <img class="down-arrow" src={downArrow} alt="down arrow" /></button
->
+<button class="accordion">Why should I use the Omega Logo Maker?</button>
 <div class="panel">
   <p>
     Omega's Logo Maker simplifies the process of creating a custom logo that
@@ -199,29 +148,27 @@ import downArrow from "../images/Arrow-down.svg";
     transition: 0.4s;
   }
 
-  .active,
-  .accordion:hover {
-    background-color: var(--white);
+  .accordion:after {
+    content: "\2193";
+    color: var(--black);
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+
+  .active:after {
+    content: "\2191";
   }
 
   .panel {
     padding: 0 18px;
-    display: none;
     background-color: var(--white);
-    overflow: hidden;
     width: 50%;
     font-size: 1rem;
     line-height: 1.5rem;
     text-align: left;
-  }
-
-  .up-arrow,
-  .down-arrow {
-    height: 25px;
-    width: 25px;
-  }
-
-  .up-arrow {
-    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
   }
 </style>
