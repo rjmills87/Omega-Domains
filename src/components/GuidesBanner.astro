@@ -1,15 +1,13 @@
 ---
 import womanImg from "../images/Woman-img.png";
-import logo from "../images/Logo-1.png";
+import guidesLogo from "../images/guides-logo.png";
 import SearchBar from "./SearchBar.astro";
 ---
 
 <div class="guides-container">
   <div class="text-container">
     <div class="logo-container">
-      <img class="logo" src={logo} alt="Omega Domains Logo" /><span
-        class="logo-text">guides</span
-      >
+      <img class="logo" src={guidesLogo} alt="Omega Domains Logo" />
     </div>
     <h2 class="headline">Why use Omega Domains?</h2>
     <p class="para-1">
@@ -51,18 +49,14 @@ import SearchBar from "./SearchBar.astro";
 
   .logo-container {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     gap: 3px;
     margin-bottom: 16px;
   }
 
   .logo {
     height: 3rem;
-    width: 5.5rem;
-  }
-
-  .logo-text {
-    font-size: 1rem;
+    width: 12rem;
   }
 
   .headline {
