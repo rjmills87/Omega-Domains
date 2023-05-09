@@ -1,2 +1,41 @@
 ---
+import guidesLogo from "../images/guides-logo-invert.png";
+import arrowRight from "../images/arrow-right.svg";
 ---
+
+<div class="guides-link">
+  <p class="text">We love taking your call.</p>
+  <div class="img-container">
+    <img class="guides-logo" src={guidesLogo} alt="Omega Guides logo" />
+    <img class="arrow-img" src={arrowRight} alt="Arrow pointing right" />
+  </div>
+</div>
+
+<style>
+  .guides-link {
+    margin-left: 5rem;
+    margin-bottom: 16px;
+  }
+
+  .text {
+    color: var(--platinum);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    cursor: pointer;
+  }
+
+  .img-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .guides-logo {
+    height: 6rem;
+    width: 25rem;
+  }
+  .arrow-img {
+    height: 6rem;
+    width: 10rem;
+  }
+</style>
