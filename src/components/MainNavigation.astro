@@ -1,12 +1,18 @@
 ---
 import logo from "../images/Logo-1.png";
+import DomainNamesMegaMenu from "./DomainNamesMegaMenu.astro";
+import WebsitesHostingMegaMenu from "./Websites&HostingMegaMenu.astro";
+import EmailMarketingMegaMenu from "./Email&MarketingMegaMenu.astro";
 ---
 
 <a href="#"><img class="logo" src={logo} alt="Omega Domains Logo" /></a>
 <div class="header-links">
   <button class="header-link">Domain Names</button>
+  <DomainNamesMegaMenu />
   <button class="header-link">Websites & Hosting</button>
+  <WebsitesHostingMegaMenu />
   <button class="header-link">Email & Office</button>
+  <EmailMarketingMegaMenu />
 </div>
 
 <style>
