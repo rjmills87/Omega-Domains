@@ -1,33 +1,98 @@
 ---
+import websiteCreatorImg from "../images/website-creator.jpeg";
+import magnifyingGlassImg from "../images/magnifying-glass-solid.svg";
 ---
 
 <div class="mega-menu">
-  <div class="column">
-    <h2>DOMAIN NAMES</h2>
-    <ol>
-      <li>Search for Domain Names</li>
-      <li>Transfer Domain Names</li>
-      <li>Auctions for Domain Names</li>
-      <li>Domain Value Appraisal</li>
-      <li>Browse Domain Name Options</li>
-    </ol>
+  <div class="top-container">
+    <h2 class="column-heading-1">DOMAIN NAMES</h2>
   </div>
-  <div class="column">
-    <ol>
-      <li>Generate Domain & Business Names</li>
-      <li>Domain Broker Service</li>
-      <li>Find a Domain Owner (WHOIS)</li>
-      <li>Save with Bundles</li>
-    </ol>
-  </div>
-  <div class="column">
-    <img src="" alt="" />
-    <h3>Learn More About Domains</h3>
+  <div class="columns">
+    <div class="column">
+      <ol>
+        <li class="nav-link">
+          <img class="link-icon" src={magnifyingGlassImg} alt="search icon" /> Search
+          for Domain Names
+        </li>
+        <li class="nav-link">Transfer Domain Names</li>
+        <li class="nav-link">Auctions for Domain Names</li>
+        <li class="nav-link">Domain Value Appraisal</li>
+        <li class="nav-link">Browse Domain Name Options</li>
+      </ol>
+    </div>
+    <div class="column">
+      <ol>
+        <li class="nav-link">Generate Domain & Business Names</li>
+        <li class="nav-link">Domain Broker Service</li>
+        <li class="nav-link">Find a Domain Owner (WHOIS)</li>
+        <li class="nav-link">Save with Bundles</li>
+      </ol>
+    </div>
+    <div class="column">
+      <img class="menu-img" src={websiteCreatorImg} alt="" />
+      <h3 class="column-heading-2">Learn More About Domains</h3>
+    </div>
   </div>
 </div>
 
 <style>
   .mega-menu {
-    display: none;
+    z-index: 1;
+    position: absolute;
+    background-color: var(--white);
+    width: 100%;
+    left: 0;
+    margin-top: 69px;
+    border-top: solid 1px var(--black);
+    border-bottom: solid 1px var(--black);
+  }
+
+  .top-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 1rem;
+  }
+
+  .column-heading-1 {
+    font-size: 1rem;
+    color: var(--black);
+    opacity: 0.5;
+    margin-left: 4rem;
+  }
+
+  .columns {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 0rem 4.25rem;
+  }
+
+  .column {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    line-height: 3rem;
+  }
+
+  .link-icon {
+    height: 30px;
+    width: 30px;
+  }
+
+  .nav-link {
+    font-weight: 600;
+    width: 70%;
+    padding: 3px;
+  }
+
+  .nav-link:hover {
+    cursor: pointer;
+    color: var(--forest_green);
+    background-color: var(--platinum);
+    border-radius: 5px;
+  }
+
+  .menu-img {
+    height: 350px;
+    width: 500px;
+    border-radius: 3px;
   }
 </style>
