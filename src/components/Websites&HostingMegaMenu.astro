@@ -93,14 +93,14 @@ import cloneImg from "../images/clone-solid.svg";
     </div>
     <div class="column">
       <img class="menu-img" src={websiteImg} alt="image of a laptop" />
-      <h3>Let our experts build your site</h3>
+      <h3 class="img-heading">Let our experts build your site</h3>
     </div>
   </div>
 </div>
 
 <style>
   .mega-menu {
-    /* display: none; */
+    display: none;
     z-index: 1;
     position: absolute;
     background-color: var(--white);
@@ -173,5 +173,13 @@ import cloneImg from "../images/clone-solid.svg";
     height: 250px;
     width: 350px;
     border-radius: 3px;
+  }
+  .img-heading {
+    font-size: 1.25rem;
+  }
+
+  .img-heading:hover {
+    cursor: pointer;
+    text-decoration: underline;
   }
 </style>
