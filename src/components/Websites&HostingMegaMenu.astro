@@ -1,5 +1,14 @@
 ---
 import websiteImg from "../images/website.jpeg";
+import windowImg from "../images/window-maximize-regular.svg";
+import shopImg from "../images/shop-solid.svg";
+import pencilImg from "../images/pencil-solid.svg";
+import arrowRightImg from "../images/arrow-right-solid.svg";
+import serverImg from "../images/server-solid.svg";
+import wordpressImg from "../images/wordpress.svg";
+import shieldImg from "../images/shield-halved-solid.svg";
+import lockImg from "../images/lock-solid.svg";
+import cloneImg from "../images/clone-solid.svg";
 ---
 
 <div class="mega-menu">
@@ -11,26 +20,75 @@ import websiteImg from "../images/website.jpeg";
   <div class="columns">
     <div class="column">
       <ol>
-        <li class="nav-link">Website Builder</li>
-        <li class="nav-link">Online Store</li>
-        <li class="nav-link">Website Design Services</li>
-        <li class="nav-link">All Website Options</li>
+        <li class="nav-link">
+          <img class="link-icon" src={windowImg} alt="window icon" />Website
+          Builder
+        </li>
+        <li class="nav-link">
+          <img class="link-icon" src={shopImg} alt="shop icon" />Online Store
+        </li>
+        <li class="nav-link">
+          <img class="link-icon" src={pencilImg} alt="pencil icon" />Website
+          Design Services
+        </li>
+        <li class="nav-link">
+          <img
+            class="link-icon arrow-icon"
+            src={arrowRightImg}
+            alt="arrow right icon"
+          />All Website Options
+        </li>
       </ol>
     </div>
     <div class="column">
       <ol>
-        <li class="nav-link">Web Hosting</li>
-        <li class="nav-link">WordPress Hosting</li>
-        <li class="nav-link">WordPress eCommerce Hosting</li>
-        <li class="nav-link">All Hosting Options</li>
+        <li class="nav-link">
+          <img class="link-icon" src={serverImg} alt="server icon" />Web Hosting
+        </li>
+        <li class="nav-link">
+          <img
+            class="link-icon"
+            src={wordpressImg}
+            alt="wordpress icon"
+          />WordPress Hosting
+        </li>
+        <li class="nav-link">
+          <img
+            class="link-icon"
+            src={wordpressImg}
+            alt="wordpress icon"
+          />WordPress eCommerce Hosting
+        </li>
+        <li class="nav-link">
+          <img
+            class="link-icon arrow-icon"
+            src={arrowRightImg}
+            alt="arrow right icon"
+          />All Hosting Options
+        </li>
       </ol>
     </div>
     <div class="column">
       <ol>
-        <li class="nav-link">SSL Certificates</li>
-        <li class="nav-link">Website Security</li>
-        <li class="nav-link">Back Up Your Website</li>
-        <li class="nav-link">All Web Security Options</li>
+        <li class="nav-link">
+          <img class="link-icon" src={shieldImg} alt="shield icon" />SSL
+          Certificates
+        </li>
+        <li class="nav-link">
+          <img class="link-icon" src={lockImg} alt="padlock icon" />Website
+          Security
+        </li>
+        <li class="nav-link">
+          <img class="link-icon" src={cloneImg} alt="clone icon" />Back Up Your
+          Website
+        </li>
+        <li class="nav-link">
+          <img
+            class="link-icon arrow-icon"
+            src={arrowRightImg}
+            alt="arrow right icon"
+          />All Web Security Options
+        </li>
       </ol>
     </div>
     <div class="column">
@@ -58,7 +116,7 @@ import websiteImg from "../images/website.jpeg";
     justify-content: flex-start;
     margin-top: 1rem;
     margin-left: 68px;
-    gap: 180px;
+    gap: 235px;
   }
 
   .column-heading {
@@ -74,7 +132,7 @@ import websiteImg from "../images/website.jpeg";
   .columns {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    padding: 0rem 4.25rem;
+    margin-left: 4.25rem;
   }
 
   .column {
@@ -89,12 +147,31 @@ import websiteImg from "../images/website.jpeg";
     gap: 1rem;
     font-weight: 600;
     padding: 3px;
-    width: 80%;
+    width: 90%;
+  }
+
+  .nav-link:hover {
+    cursor: pointer;
+    color: var(--forest_green);
+    background-color: var(--platinum);
+    border-radius: 5px;
+  }
+
+  .link-icon {
+    height: 35px;
+    width: 35px;
+    background-color: var(--sage);
+    padding: 6px;
+    border-radius: 5px;
+  }
+
+  .arrow-icon {
+    background-color: var(--white);
   }
 
   .menu-img {
-    height: 300px;
-    width: 400px;
+    height: 250px;
+    width: 350px;
     border-radius: 3px;
   }
 </style>
