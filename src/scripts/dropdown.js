@@ -7,19 +7,13 @@ const websitesAndHostingMegaMenu = document.querySelector(".mega-menu-2");
 const emailAndMarketingMegaMenu = document.querySelector(".mega-menu-3");
 
 domainNamesBtn.addEventListener("click", function () {
-  domainNamesMegaMenu.style.display = "block";
-  websitesAndHostingMegaMenu.style.display = "none";
-  emailAndMarketingMegaMenu.style.display = "none";
+  domainNamesMegaMenu.classList.toggle("active");
 });
 
 websitesAndHostingBtn.addEventListener("click", function () {
-  websitesAndHostingMegaMenu.style.display = "block";
-  domainNamesMegaMenu.style.display = "none";
-  emailAndMarketingMegaMenu.style.display = "none";
+  websitesAndHostingMegaMenu.classList.toggle("active");
 });
 
 emailAndMarketingBtn.addEventListener("click", function () {
-  emailAndMarketingMegaMenu.style.display = "block";
-  domainNamesMegaMenu.style.display = "none";
-  websitesAndHostingMegaMenu.style.display = "none";
+  emailAndMarketingMegaMenu.classList.toggle("active");
 });
