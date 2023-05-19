@@ -11,7 +11,7 @@ import lockImg from "../images/lock-solid.svg";
 import cloneImg from "../images/clone-solid.svg";
 ---
 
-<div class="mega-menu mega-menu-2">
+<div class="mega-menu" id="mega-menu-2">
   <div class="top-container">
     <h2 class="column-heading heading-1">WEBSITES</h2>
     <h2 class="column-heading heading-2">HOSTING</h2>
@@ -99,29 +99,12 @@ import cloneImg from "../images/clone-solid.svg";
 </div>
 
 <style>
-  .mega-menu {
-    display: none;
-    z-index: 1;
-    position: absolute;
-    background-color: var(--white);
-    width: 100%;
-    left: 0;
-    margin-top: 69px;
-    border-top: solid 1px var(--black);
-    border-bottom: solid 1px var(--black);
-  }
-
   .top-container {
     display: flex;
     justify-content: flex-start;
     margin-top: 1rem;
     margin-left: 68px;
     gap: 229px;
-  }
-
-  .mega-menu.active {
-    display: block;
-    position: absolute;
   }
 
   .column-heading {

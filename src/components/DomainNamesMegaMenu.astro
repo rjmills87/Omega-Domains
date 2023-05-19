@@ -11,7 +11,7 @@ import globeImg from "../images/globe-solid.svg";
 import gridImg from "../images/border-all-solid.svg";
 ---
 
-<div class="mega-menu mega-menu-1">
+<div class="mega-menu" id="mega-menu-1">
   <div class="top-container">
     <h2 class="column-heading">DOMAIN NAMES</h2>
   </div>
@@ -71,23 +71,6 @@ import gridImg from "../images/border-all-solid.svg";
 </div>
 
 <style>
-  .mega-menu {
-    display: none;
-    z-index: 1;
-    position: absolute;
-    background-color: var(--white);
-    width: 100%;
-    left: 0;
-    margin-top: 69px;
-    border-top: solid 1px var(--black);
-    border-bottom: solid 1px var(--black);
-  }
-
-  .mega-menu.active {
-    display: block;
-    position: absolute;
-  }
-
   .top-container {
     display: flex;
     justify-content: flex-start;
