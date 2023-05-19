@@ -69,6 +69,8 @@ body {
 }
 
 header {
+  position: relative;
+  z-index: 10;
   background-color: var(--white);
   padding-bottom: 1.5rem;
 }
@@ -99,20 +101,24 @@ footer {
 /* Mega Menu */
 
 .mega-menu {
+  visibility: hidden;
   opacity: 0;
-  z-index: 1;
   position: absolute;
+  z-index: -1;
   background-color: var(--white);
   width: 100%;
   left: 0;
-  margin-top: 69px;
   border-top: solid 1px var(--black);
   border-bottom: solid 1px var(--black);
+  transform: translateY(0px);
+  transition: opacity 500ms ease-in-out, transform 250ms ease-in-out;
 }
 
 .mega-menu.active {
+  visibility: visible;
   opacity: 1;
   position: absolute;
+  transform: translateY(69px);
 }
 
 @media screen and (max-width: 1140px) {
