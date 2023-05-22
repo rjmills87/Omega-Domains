@@ -23,3 +23,9 @@ emailAndMarketingBtn.addEventListener("click", () => {
   domainNamesMegaMenu.classList.remove("active");
   websitesAndHostingMegaMenu.classList.remove("active");
 });
+
+window.addEventListener("scroll", () => {
+  domainNamesMegaMenu.classList.remove("active");
+  websitesAndHostingMegaMenu.classList.remove("active");
+  emailAndMarketingMegaMenu.classList.remove("active");
+});
