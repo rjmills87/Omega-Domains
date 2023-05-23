@@ -1,5 +1,5 @@
 ---
-const { placeHolder,searchClass, barClass, btnClass } = Astro.props;
+const { placeHolder, searchClass, barClass, btnClass } = Astro.props;
 ---
 
 <form class={searchClass} action="#">
@@ -68,7 +68,6 @@ const { placeHolder,searchClass, barClass, btnClass } = Astro.props;
     color: var(--platinum);
   }
 
-
   /* Guides Banner Search Bar Styles */
 
   .search-guides {
@@ -80,12 +79,11 @@ const { placeHolder,searchClass, barClass, btnClass } = Astro.props;
     height: 3rem;
     background-color: var(--platinum);
     color: var(--forest_green);
-    font-size: .75rem;
+    font-size: 0.75rem;
     padding-left: 1rem;
-    
   }
 
-  .search-btn-guides  {
+  .search-btn-guides {
     cursor: pointer;
     width: 20%;
     height: 3rem;
@@ -96,7 +94,7 @@ const { placeHolder,searchClass, barClass, btnClass } = Astro.props;
     margin-left: -5px;
   }
 
-   .search-btn-guides:hover {
+  .search-btn-guides:hover {
     background-color: var(--black);
     color: var(--platinum);
   }
@@ -113,9 +111,16 @@ const { placeHolder,searchClass, barClass, btnClass } = Astro.props;
       font-size: 1rem;
     }
   }
-  }
 
   @media screen and (max-width: 480px) {
+    .search-bar {
+      font-size: 0.75rem;
+    }
+
+    .search-btn {
+      font-size: 0.75rem;
+    }
+
     .search-bar-banner {
       width: 75%;
       font-size: 0.7rem;
