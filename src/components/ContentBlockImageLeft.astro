@@ -36,7 +36,7 @@ const { titleHeading, textHeading, textContent, btnText, image, imageAltText } =
     font-size: 1rem;
     margin-top: 24px;
     margin-bottom: 16px;
-    width: 80%;
+    width: 75%;
     line-height: 1.4rem;
   }
 
@@ -71,17 +71,23 @@ const { titleHeading, textHeading, textContent, btnText, image, imageAltText } =
   @media screen and (max-width: 1140px) {
     .container {
       margin: 0;
+      text-align: center;
+    }
+
+     .content-heading {
+      width: auto;
     }
 
     .content-para {
       width: auto;
+      padding: bottom: 1rem;;
     }
 
-    .img-container{
-        margin: 0;
-        width: auto;
+    .img-container {
+      margin: 0;
+      width: auto;
+      padding-top: 2rem;
     }
-
 
     .content-img {
       width: 350px;
@@ -93,13 +99,8 @@ const { titleHeading, textHeading, textContent, btnText, image, imageAltText } =
   @media screen and (max-width: 480px) {
     .container {
       text-align: center;
-    }
-
-    .content-heading {
       width: auto;
     }
 
-    .content-img {
-      margin-top: 2.5rem;
-    }
+  }
 </style>
