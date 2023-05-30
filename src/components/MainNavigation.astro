@@ -3,15 +3,34 @@ import logo from "../images/Logo-1.png";
 import DomainNamesMegaMenu from "./DomainNamesMegaMenu.astro";
 import WebsitesHostingMegaMenu from "./Websites&HostingMegaMenu.astro";
 import EmailMarketingMegaMenu from "./Email&MarketingMegaMenu.astro";
+import downArrow from "../images/down-arrow.svg";
 ---
 
 <a href="#"><img class="logo" src={logo} alt="Omega Domains Logo" /></a>
 <div class="header-links">
-  <span class="header-link header-link-1">Domain Names</span>
+  <span class="header-link header-link-1"
+    >Domain Names<img
+      class="down-arrow"
+      src={downArrow}
+      alt="down arrow"
+    /></span
+  >
   <DomainNamesMegaMenu />
-  <span class="header-link header-link-2">Websites & Hosting</span>
+  <span class="header-link header-link-2"
+    >Websites & Hosting<img
+      class="down-arrow"
+      src={downArrow}
+      alt="down arrow"
+    /></span
+  >
   <WebsitesHostingMegaMenu />
-  <span class="header-link header-link-3">Email & Office</span>
+  <span class="header-link header-link-3"
+    >Email & Office<img
+      class="down-arrow"
+      src={downArrow}
+      alt="down arrow"
+    /></span
+  >
   <EmailMarketingMegaMenu />
 </div>
 
@@ -39,6 +58,12 @@ import EmailMarketingMegaMenu from "./Email&MarketingMegaMenu.astro";
   .header-link:hover {
     color: var(--forest_green);
     cursor: pointer;
+  }
+
+  .down-arrow {
+    height: 12px;
+    width: 12px;
+    margin-left: 10px;
   }
 
   @media screen and (max-width: 1140px) {

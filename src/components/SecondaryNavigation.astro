@@ -1,8 +1,18 @@
 ---
 import shoppingCart from "../images/shopping-cart.svg";
+import downArrow from "../images/down-arrow.svg";
 ---
 
 <ul class="secondary-menu">
+  <li class="secondary-link">
+    <a href=""
+      >020 1234 5678 <img
+        class="down-arrow"
+        src={downArrow}
+        alt="down arrow"
+      /></a
+    >
+  </li>
   <li class="secondary-link"><a href="">Help</a></li>
   <li class="secondary-link"><a href="">Sign In</a></li>
   <a href=""><img src={shoppingCart} alt="Shopping Cart Icon" /></a>
@@ -24,8 +34,12 @@ import shoppingCart from "../images/shopping-cart.svg";
 
   .secondary-link > a:hover {
     color: var(--forest_green);
-    border-color: var(--forest_green);
-    border-bottom: solid 0.1rem;
+  }
+
+  .down-arrow {
+    height: 12px;
+    width: 12px;
+    margin-left: 10px;
   }
 
   @media screen and (max-width: 1140px) {
