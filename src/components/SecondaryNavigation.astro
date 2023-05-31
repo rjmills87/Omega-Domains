@@ -2,6 +2,7 @@
 import shoppingCart from "../images/shopping-cart.svg";
 import downArrow from "../images/down-arrow.svg";
 import ContactMegaMenu from "./ContactMegaMenu.astro";
+import SignInMenu from "./SignInMenu.astro";
 ---
 
 <ul class="secondary-menu">
@@ -10,7 +11,10 @@ import ContactMegaMenu from "./ContactMegaMenu.astro";
   </li>
   <ContactMegaMenu />
   <li class="secondary-link"><a href="">Help</a></li>
-  <li class="secondary-link"><a href="">Sign In</a></li>
+  <li class="secondary-link sign-in-link">
+    Sign In <img class="down-arrow" src={downArrow} alt="down arrow" />
+  </li>
+  <SignInMenu />
   <a href=""><img src={shoppingCart} alt="Shopping Cart Icon" /></a>
 </ul>
 
@@ -33,7 +37,8 @@ import ContactMegaMenu from "./ContactMegaMenu.astro";
     cursor: pointer;
   }
 
-  .contact-link:hover {
+  .contact-link:hover,
+  .sign-in-link:hover {
     cursor: pointer;
   }
 

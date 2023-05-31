@@ -98,7 +98,7 @@ footer {
   margin: 3.6rem 3rem;
 }
 
-/* Mega Menu */
+/* Dropdown Menus */
 
 .mega-menu,
 .contact-menu {
@@ -127,6 +127,53 @@ footer {
   opacity: 1;
   position: absolute;
   transform: translateY(160px);
+}
+
+.sign-in-menu:before {
+  content: "";
+  position: absolute;
+  right: 11px;
+  top: -10px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent var(--white) transparent;
+  z-index: 9999;
+}
+.sign-in-menu:after {
+  content: "";
+  position: absolute;
+  right: 4px;
+  top: -22px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 17px 17px 17px;
+  border-color: transparent transparent var(--white) transparent;
+  z-index: 9998;
+}
+.sign-in-menu {
+  visibility: hidden;
+  opacity: 0;
+  z-index: 99999;
+  background: var(--white);
+  border: 1px solid var(--white);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  float: right;
+  position: absolute;
+  margin-right: 48px;
+  top: 2.8em;
+  width: 25%;
+  transform: translateY(0px);
+  transition: opacity 500ms ease-in-out, transform 250ms ease-in-out;
+}
+
+.sign-in-menu.active {
+  visibility: visible;
+  opacity: 1;
+  position: absolute;
+  transform: translateY(30px);
 }
 
 @media screen and (max-width: 1140px) {
