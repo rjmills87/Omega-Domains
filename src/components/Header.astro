@@ -2,6 +2,7 @@
 import MainNavigation from "./MainNavigation.astro";
 import SecondaryNavigation from "./SecondaryNavigation.astro";
 import Hamburger from "./Hamburger.astro";
+import MobileMenu from "./MobileMenu.astro";
 ---
 
 <header>
@@ -28,6 +29,8 @@ import Hamburger from "./Hamburger.astro";
   }
 
   @media screen and (max-width: 480px) {
-    margin: 0 2rem;
+    nav {
+      margin: 0 1.5rem;
+    }
   }
 </style>

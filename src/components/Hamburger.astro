@@ -1,40 +1,92 @@
 ---
 ---
 
-<div class="hamburger">
-  <span class="line"></span>
-  <span class="line"></span>
-  <span class="line"></span>
+<div id="hamburger">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
 </div>
 
 <style>
-  .hamburger {
-    cursor: pointer;
-    display: none;
-  }
-
-  .hamburger .line {
-    display: block;
-    width: 45px;
-    height: 4px;
-    border-radius: 15px;
-    margin-bottom: 10px;
-    background-color: var(--black);
-  }
-
   @media screen and (max-width: 1140px) {
-    .hamburger {
+    #hamburger {
+      width: 60px;
+      height: 45px;
+      position: relative;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transition: 0.5s ease-in-out;
+      -moz-transition: 0.5s ease-in-out;
+      -o-transition: 0.5s ease-in-out;
+      transition: 0.5s ease-in-out;
+      cursor: pointer;
+    }
+
+    #hamburger span {
       display: block;
+      position: absolute;
+      height: 5px;
+      width: 80%;
+      background: var(--black);
+      border-radius: 9px;
+      opacity: 1;
+      left: 0;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transition: 0.25s ease-in-out;
+      -moz-transition: 0.25s ease-in-out;
+      -o-transition: 0.25s ease-in-out;
+      transition: 0.25s ease-in-out;
+    }
+
+    #hamburger span:nth-child(1) {
+      top: 0px;
+    }
+
+    #hamburger span:nth-child(2),
+    #hamburger span:nth-child(3) {
+      top: 18px;
+    }
+
+    #hamburger span:nth-child(4) {
+      top: 36px;
+    }
+
+    #hamburger.open span:nth-child(1) {
+      top: 18px;
+      width: 0%;
+      left: 50%;
+    }
+
+    #hamburger.open span:nth-child(2) {
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+
+    #hamburger.open span:nth-child(3) {
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+    }
+
+    #hamburger.open span:nth-child(4) {
+      top: 18px;
+      width: 0%;
+      left: 50%;
     }
   }
 
   @media screen and (max-width: 480px) {
-    .hamburger {
+    #hamburger {
       visibility: block;
-    }
-    .hamburger .line {
-      width: 40px;
-      height: 3.5px;
     }
   }
 </style>
