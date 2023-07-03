@@ -54,17 +54,22 @@ import shoppingCart from "../images/shopping-cart.svg";
   }
 
   @media screen and (max-width: 1140px) {
-  }
-
-  @media screen and (max-width: 480px) {
-    .menu-container {
+        .menu-container {
       display: block;
       position: fixed;
+      z-index: 1;
+      overflow-x: hidden;
       top: 100px;
-      left: 0px;
+      left: 0;
       background: var(--white);
-      width: 85%;
+      width: 0%;
       height: 100vh;
+      transition: 0.5s ease-in-out;
+      white-space: nowrap;
+    }
+
+    .menu-container.active {
+      width: 85%;
     }
 
     .wrapper {
@@ -115,4 +120,8 @@ import shoppingCart from "../images/shopping-cart.svg";
       width: 30px;
     }
   }
+  }
+
+  @media screen and (max-width: 480px) {
+
 </style>
