@@ -1,0 +1,122 @@
+---
+import websiteCreatorImg from "../images/website-creator.jpeg";
+import magnifyingGlassImg from "../images/magnifying-glass-solid.svg";
+import rightLeftArrowImg from "../images/right-left-solid.svg";
+import hammerImg from "../images/gavel-solid.svg";
+import dollarImg from "../images/sack-dollar-solid.svg";
+import listImg from "../images/list-solid.svg";
+import checkImg from "../images/square-check-solid.svg";
+import userImg from "../images/circle-user-solid.svg";
+import globeImg from "../images/globe-solid.svg";
+import gridImg from "../images/border-all-solid.svg";
+---
+
+<div class="sub-menu-container">
+  <div class="wrapper">
+    <h2 class="sub-heading">DOMAIN NAMES</h2>
+    <div class="nav-links">
+      <ol>
+        <li class="nav-link">
+          <img class="link-icon" src={magnifyingGlassImg} alt="search icon" /> Search
+          for Domain Names
+        </li>
+        <li class="nav-link">
+          <img
+            class="link-icon"
+            src={rightLeftArrowImg}
+            alt="arrows icon"
+          />Transfer Domain Names
+        </li>
+        <li class="nav-link">
+          <img class="link-icon" src={hammerImg} alt="hammer icon" />Auctions
+          for Domain Names
+        </li>
+        <li class="nav-link">
+          <img class="link-icon" src={dollarImg} alt="dollar icon" />Domain
+          Value Appraisal
+        </li>
+        <li class="nav-link">
+          <img class="link-icon" src={listImg} alt="list icon" />Browse Domain
+          Name Options
+        </li>
+        <li class="nav-link">
+          <img class="link-icon" src={checkImg} alt="check icon" />Generate
+          Domain & Business Names
+        </li>
+        <li class="nav-link">
+          <img class="link-icon" src={userImg} alt="user icon" />Domain Broker
+          Service
+        </li>
+        <li class="nav-link">
+          <img class="link-icon" src={globeImg} alt="globe icon" />Find a Domain
+          Owner (WHOIS)
+        </li>
+        <li class="nav-link">
+          <img class="link-icon" src={gridImg} alt="grid icon" />Save with
+          Bundles
+        </li>
+      </ol>
+    </div>
+    <img class="menu-img" src={websiteCreatorImg} alt="Computer Image" />
+    <h3 class="img-heading">Learn More About Domains</h3>
+  </div>
+</div>
+
+<style>
+  .sub-menu-container {
+    /* display: block; */
+    display: none;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+    background: var(--white);
+    width: 75%;
+    height: 100vh;
+    transition: 0.5s ease-in-out;
+    white-space: nowrap;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    height: 100vh;
+  }
+
+  .sub-heading {
+    font-size: 1rem;
+    color: var(--black);
+    opacity: 0.5;
+    padding: 8px;
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 8px;
+  }
+
+  .link-icon {
+    height: 35px;
+    width: 35px;
+    background-color: var(--sage);
+    padding: 6px;
+    border-radius: 5px;
+  }
+
+  .menu-img {
+    height: 150px;
+    width: 225px;
+    border-radius: 3px;
+    margin-left: 8px;
+  }
+
+  .img-heading {
+    font-size: 1.25rem;
+    margin-left: 8px;
+  }
+</style>

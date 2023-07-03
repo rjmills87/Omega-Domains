@@ -3,16 +3,21 @@ import arrowRight from "../images/arrow-right-solid.svg";
 import questionIcon from "../images/circle-question-solid.svg";
 import accountIcon from "../images/user-solid.svg";
 import shoppingCart from "../images/shopping-cart.svg";
+import omegaIcon from "../images/omega-icon.png";
+import DomainNamesMobileMenu from "./DomainNamesMobileMenu.astro";
+import EmailMarketingMobileMenu from "./Email&MarketingMobileMenu.astro";
+import WebsitesHostingMobileMenu from "./Websites&HostingMobileMenu.astro";
 ---
 
 <div class="menu-container">
   <div class="wrapper">
     <div class="top-links">
+  <img class="logo" src={omegaIcon} alt="Omega Domains Logo">
       <div class="top-link">
         <span>Domain Names</span>
         <img src={arrowRight} alt="right arrow" class="arrow" />
       </div>
-
+<DomainNamesMobileMenu/>
       <div class="top-link">
         <span>Websites & Hosting</span><img
           src={arrowRight}
@@ -20,6 +25,7 @@ import shoppingCart from "../images/shopping-cart.svg";
           class="arrow"
         />
       </div>
+<WebsitesHostingMobileMenu/>
       <div class="top-link">
         <span>Email & Marketing</span><img
           src={arrowRight}
@@ -27,6 +33,7 @@ import shoppingCart from "../images/shopping-cart.svg";
           class="arrow"
         />
       </div>
+<EmailMarketingMobileMenu/>
     </div>
     <div class="bottom-links">
       <div class="bottom-link">
@@ -59,7 +66,7 @@ import shoppingCart from "../images/shopping-cart.svg";
       position: fixed;
       z-index: 1;
       overflow-x: hidden;
-      top: 100px;
+      top: 0;
       left: 0;
       background: var(--white);
       width: 0%;
@@ -69,14 +76,20 @@ import shoppingCart from "../images/shopping-cart.svg";
     }
 
     .menu-container.active {
-      width: 85%;
+      width: 75%;
     }
 
     .wrapper {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      height: 85%;
+      height: 100%;
+      padding-top: 1rem;
+    }
+
+    .logo {
+      height: 38px;
+      width: 38px;
     }
 
     .top-links {
