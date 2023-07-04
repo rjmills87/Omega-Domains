@@ -1,2 +1,154 @@
 ---
+import websiteImg from "../images/website.jpeg";
+import windowImg from "../images/window-maximize-regular.svg";
+import shopImg from "../images/shop-solid.svg";
+import pencilImg from "../images/pencil-solid.svg";
+import arrowRightImg from "../images/arrow-right-solid.svg";
+import serverImg from "../images/server-solid.svg";
+import wordpressImg from "../images/wordpress.svg";
+import shieldImg from "../images/shield-halved-solid.svg";
+import lockImg from "../images/lock-solid.svg";
+import cloneImg from "../images/clone-solid.svg";
 ---
+
+<div class="sub-menu-container">
+  <div class="wrapper">
+    <h2 class="sub-heading">WEBSITES</h2>
+    <div class="nav-links">
+      <ol>
+        <li class="nav-link">
+          <img class="link-icon" src={windowImg} alt="window icon" />Website
+          Builder
+        </li>
+        <li class="nav-link">
+          <img class="link-icon" src={shopImg} alt="shop icon" />Online Store
+        </li>
+        <li class="nav-link">
+          <img class="link-icon" src={pencilImg} alt="pencil icon" />Website
+          Design Services
+        </li>
+        <li class="nav-link">
+          <img
+            class="link-icon arrow-icon"
+            src={arrowRightImg}
+            alt="arrow right icon"
+          />All Website Options
+        </li>
+      </ol>
+    </div>
+    <div class="nav-links">
+      <h2 class="sub-heading">HOSTING</h2>
+      <ol>
+        <li class="nav-link">
+          <img class="link-icon" src={serverImg} alt="server icon" />Web Hosting
+        </li>
+        <li class="nav-link">
+          <img
+            class="link-icon"
+            src={wordpressImg}
+            alt="wordpress icon"
+          />WordPress Hosting
+        </li>
+        <li class="nav-link">
+          <img
+            class="link-icon"
+            src={wordpressImg}
+            alt="wordpress icon"
+          />WordPress eCommerce Hosting
+        </li>
+        <li class="nav-link">
+          <img
+            class="link-icon arrow-icon"
+            src={arrowRightImg}
+            alt="arrow right icon"
+          />All Hosting Options
+        </li>
+      </ol>
+    </div>
+    <h2 class="sub-heading">WEB SECURITY</h2>
+    <div class="nav-links">
+      <ol>
+        <li class="nav-link">
+          <img class="link-icon" src={shieldImg} alt="shield icon" />SSL
+          Certificates
+        </li>
+        <li class="nav-link">
+          <img class="link-icon" src={lockImg} alt="padlock icon" />Website
+          Security
+        </li>
+        <li class="nav-link">
+          <img class="link-icon" src={cloneImg} alt="clone icon" />Back Up Your
+          Website
+        </li>
+        <li class="nav-link">
+          <img
+            class="link-icon arrow-icon"
+            src={arrowRightImg}
+            alt="arrow right icon"
+          />All Web Security Options
+        </li>
+      </ol>
+    </div>
+    <img class="menu-img" src={websiteImg} alt="image of a laptop" />
+    <h3 class="img-heading">Let our experts build your site</h3>
+  </div>
+</div>
+
+<style>
+  .sub-menu-container {
+    /* display: block; */
+    display: none;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+    background: var(--white);
+    width: 75%;
+    height: 100vh;
+    transition: 0.5s ease-in-out;
+    white-space: nowrap;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    height: 100vh;
+  }
+
+  .sub-heading {
+    font-size: 1rem;
+    color: var(--black);
+    opacity: 0.5;
+    padding: 8px;
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 8px;
+  }
+
+  .link-icon {
+    height: 35px;
+    width: 35px;
+    background-color: var(--sage);
+    padding: 6px;
+    border-radius: 5px;
+  }
+
+  .menu-img {
+    height: 150px;
+    width: 225px;
+    border-radius: 3px;
+    margin-left: 8px;
+  }
+
+  .img-heading {
+    font-size: 1rem;
+    margin-left: 8px;
+  }
+</style>
