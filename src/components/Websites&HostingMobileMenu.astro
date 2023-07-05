@@ -9,10 +9,12 @@ import wordpressImg from "../images/wordpress.svg";
 import shieldImg from "../images/shield-halved-solid.svg";
 import lockImg from "../images/lock-solid.svg";
 import cloneImg from "../images/clone-solid.svg";
+import backArrow from "../images/back-arrow.svg";
 ---
 
 <div class="sub-menu-container">
   <div class="wrapper">
+    <img class="back-btn" src={backArrow} alt="back arrow" />
     <h2 class="sub-heading">WEBSITES</h2>
     <div class="nav-links">
       <ol>
@@ -96,8 +98,8 @@ import cloneImg from "../images/clone-solid.svg";
 
 <style>
   .sub-menu-container {
-    /* display: block; */
-    display: none;
+    display: block;
+    /* display: none; */
     position: fixed;
     z-index: 1;
     overflow-x: hidden;
@@ -114,6 +116,10 @@ import cloneImg from "../images/clone-solid.svg";
     display: grid;
     grid-template-columns: auto;
     height: 100vh;
+  }
+
+  .back-btn {
+    padding: 2rem 0rem 1rem 1rem;
   }
 
   .sub-heading {
@@ -150,5 +156,6 @@ import cloneImg from "../images/clone-solid.svg";
   .img-heading {
     font-size: 1rem;
     margin-left: 8px;
+    padding: 1rem 0rem 2rem 0rem;
   }
 </style>

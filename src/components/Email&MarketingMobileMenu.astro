@@ -1,2 +1,119 @@
 ---
+import seoImg from "../images/seo.jpeg";
+import envelopeImg from "../images/envelope-solid.svg";
+import imageImg from "../images/image-solid.svg";
+import bullhornImg from "../images/bullhorn-solid.svg";
+import arrowRightImg from "../images/arrow-right-solid.svg";
+import backArrow from "../images/back-arrow.svg";
 ---
+
+<div class="sub-menu-container">
+  <div class="wrapper">
+    <div class="menu-top">
+      <img class="back-btn" src={backArrow} alt="back arrow" />
+      <h3 class="sub-heading">CONNECT & GROW</h3>
+      <div class="nav-links">
+        <ol>
+          <li class="nav-link">
+            <img class="link-icon" src={envelopeImg} alt="mail icon" />Email &
+            Microsoft 365
+          </li>
+          <li class="nav-link">
+            <img class="link-icon" src={imageImg} alt="image icon" />Content &
+            Photo Creator
+          </li>
+          <li class="nav-link">
+            <img
+              class="link-icon"
+              src={bullhornImg}
+              alt="bullhorn icon"
+            />Digital Marketing Suite
+          </li>
+          <li class="nav-link">
+            <img
+              class="link-icon arrow-icon"
+              src={arrowRightImg}
+              alt="arrow right icon"
+            />All Marketing Options
+          </li>
+        </ol>
+      </div>
+    </div>
+    <div class="menu-bottom">
+      <img class="menu-img" src={seoImg} alt="" />
+      <h3 class="img-heading">Hire an SEO Expert</h3>
+    </div>
+  </div>
+</div>
+
+<style>
+  .sub-menu-container {
+    /* display: block; */
+    display: none;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+    background: var(--white);
+    width: 75%;
+    height: 100vh;
+    transition: 0.5s ease-in-out;
+    white-space: nowrap;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+  }
+
+  .menu-top {
+    padding-top: 1.5rem;
+  }
+
+  .menu-bottom {
+    padding-bottom: 2rem;
+  }
+
+  .back-btn {
+    padding: 0rem 0rem 1rem 1rem;
+  }
+
+  .sub-heading {
+    font-size: 1rem;
+    color: var(--black);
+    opacity: 0.5;
+    padding: 8px;
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 8px;
+  }
+
+  .link-icon {
+    height: 35px;
+    width: 35px;
+    background-color: var(--sage);
+    padding: 6px;
+    border-radius: 5px;
+  }
+
+  .menu-img {
+    height: 150px;
+    width: 225px;
+    border-radius: 3px;
+    margin-left: 8px;
+  }
+
+  .img-heading {
+    font-size: 1rem;
+    margin-left: 8px;
+  }
+</style>
