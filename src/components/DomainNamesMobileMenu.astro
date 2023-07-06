@@ -65,73 +65,99 @@ import backArrow from "../images/back-arrow.svg";
 </div>
 
 <style>
-  .sub-menu-container {
-    visibility: hidden;
-    opacity: 0;
-    position: fixed;
-    z-index: 1;
-    overflow-x: hidden;
-    top: 0;
-    left: 400px;
-    background-color: var(--platinum);
-    width: 25%;
-    height: 100vh;
-    transition: 0.7s ease-in-out;
-    white-space: nowrap;
+  @media screen and (max-width: 1140px) {
+    .sub-menu-container {
+      visibility: hidden;
+      opacity: 0;
+      position: fixed;
+      z-index: 1;
+      overflow-x: hidden;
+      top: 0;
+      left: 400px;
+      background-color: var(--platinum);
+      width: 25%;
+      height: 100vh;
+      transition: 0.7s ease-in-out;
+      white-space: nowrap;
+    }
+
+    .sub-menu-container.active {
+      left: 0;
+      width: 75%;
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .wrapper {
+      display: grid;
+      grid-template-columns: auto;
+      height: 100vh;
+    }
+
+    .back-btn {
+      padding: 2rem 0rem 1rem 1rem;
+    }
+
+    .sub-heading {
+      font-size: 1.5rem;
+      color: var(--black);
+      opacity: 0.5;
+      padding: 8px;
+    }
+
+    .nav-link {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 8px;
+    }
+
+    .link-icon {
+      height: 45px;
+      width: 45px;
+      background-color: var(--sage);
+      padding: 6px;
+      border-radius: 5px;
+    }
+
+    .menu-img {
+      height: 250px;
+      width: 325px;
+      border-radius: 3px;
+      margin-left: 8px;
+      padding-top: 1rem;
+    }
+
+    .img-heading {
+      font-size: 1.5rem;
+      margin-left: 8px;
+      padding: 1rem 0rem 2rem 0rem;
+    }
   }
 
-  .sub-menu-container.active {
-    left: 0;
-    width: 75%;
-    visibility: visible;
-    opacity: 1;
-  }
+  @media screen and (max-width: 480px) {
+    .sub-heading {
+      font-size: 1rem;
+    }
 
-  .wrapper {
-    display: grid;
-    grid-template-columns: auto;
-    height: 100vh;
-  }
+    .nav-link {
+      font-size: 0.75rem;
+    }
 
-  .back-btn {
-    padding: 2rem 0rem 1rem 1rem;
-  }
+    .link-icon {
+      height: 35px;
+      width: 35px;
+    }
 
-  .sub-heading {
-    font-size: 1rem;
-    color: var(--black);
-    opacity: 0.5;
-    padding: 8px;
-  }
+    .menu-img {
+      height: 150px;
+      width: 225px;
+    }
 
-  .nav-link {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    font-size: 0.8rem;
-    font-weight: 600;
-    padding: 8px;
-  }
-
-  .link-icon {
-    height: 35px;
-    width: 35px;
-    background-color: var(--sage);
-    padding: 6px;
-    border-radius: 5px;
-  }
-
-  .menu-img {
-    height: 150px;
-    width: 225px;
-    border-radius: 3px;
-    margin-left: 8px;
-    padding-top: 1rem;
-  }
-
-  .img-heading {
-    font-size: 1rem;
-    margin-left: 8px;
-    padding: 1rem 0rem 2rem 0rem;
+    .img-heading {
+      font-size: 1rem;
+    }
   }
 </style>

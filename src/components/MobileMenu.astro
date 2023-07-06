@@ -12,28 +12,28 @@ import WebsitesHostingMobileMenu from "./Websites&HostingMobileMenu.astro";
 <div class="menu-container">
   <div class="wrapper">
     <div class="top-links">
-  <img class="mob-menu-logo" src={omegaIcon} alt="Omega Domains Logo">
-      <div class="top-link">
+      <img class="mob-menu-logo" src={omegaIcon} alt="Omega Domains Logo" />
+      <div class="top-link dn-open">
         <span>Domain Names</span>
-        <img src={arrowRight} alt="right arrow" class="arrow dn-open "  />
+        <img src={arrowRight} alt="right arrow" class="arrow" />
       </div>
-<DomainNamesMobileMenu/>
-      <div class="top-link">
+      <DomainNamesMobileMenu />
+      <div class="top-link wh-open">
         <span>Websites & Hosting</span><img
           src={arrowRight}
           alt="right arrow"
-          class="arrow wh-open"
+          class="arrow"
         />
       </div>
-<WebsitesHostingMobileMenu/>
-      <div class="top-link">
+      <WebsitesHostingMobileMenu />
+      <div class="top-link em-open">
         <span>Email & Marketing</span><img
           src={arrowRight}
           alt="right arrow"
-          class="arrow em-open"
+          class="arrow"
         />
       </div>
-<EmailMarketingMobileMenu/>
+      <EmailMarketingMobileMenu />
     </div>
     <div class="bottom-links">
       <div class="bottom-link">
@@ -61,7 +61,7 @@ import WebsitesHostingMobileMenu from "./Websites&HostingMobileMenu.astro";
   }
 
   @media screen and (max-width: 1140px) {
-        .menu-container {
+    .menu-container {
       display: block;
       position: fixed;
       z-index: 1;
@@ -88,8 +88,8 @@ import WebsitesHostingMobileMenu from "./Websites&HostingMobileMenu.astro";
     }
 
     .mob-menu-logo {
-      height: 38px;
-      width: 38px;
+      height: 48px;
+      width: 48px;
     }
 
     .top-links {
@@ -103,7 +103,7 @@ import WebsitesHostingMobileMenu from "./Websites&HostingMobileMenu.astro";
       display: flex;
       align-items: center;
       justify-content: space-between;
-      font-size: 1rem;
+      font-size: 1.5rem;
     }
 
     .bottom-links {
@@ -118,24 +118,45 @@ import WebsitesHostingMobileMenu from "./Websites&HostingMobileMenu.astro";
       display: flex;
       align-items: center;
       justify-content: flex-start;
-      font-size: 0.8rem;
+      font-size: 1.25rem;
       gap: 10px;
     }
 
     .arrow {
       background-color: var(--white);
-      height: 25px;
-      width: 25px;
+      height: 35px;
+      width: 35px;
     }
 
     .icon {
       color: var(--black);
+      height: 40px;
+      width: 40px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .mob-menu-logo {
+      height: 38px;
+      width: 38px;
+    }
+
+    .top-link {
+      font-size: 1rem;
+    }
+
+    .bottom-link {
+      font-size: 1rem;
+    }
+
+    .arrow {
+      height: 30px;
+      width: 30px;
+    }
+
+    .icon {
       height: 30px;
       width: 30px;
     }
   }
-  }
-
-  @media screen and (max-width: 480px) {
-
 </style>
