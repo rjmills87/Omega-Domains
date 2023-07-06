@@ -1,5 +1,6 @@
 const mobileMenu = document.querySelector(".menu-container");
 const menuToggle = document.getElementById("hamburger");
+const mobMenuLogo = document.querySelector(".mob-menu-logo");
 const body = document.querySelector("body");
 
 menuToggle.addEventListener("click", () => {
@@ -16,6 +17,13 @@ menuToggle.addEventListener("click", () => {
     body.style.overflow = "auto";
     body.removeEventListener("touchmove", preventScroll);
   }
+});
+
+mobMenuLogo.addEventListener("click", () => {
+  mobileMenu.classList.remove("active");
+  menuToggle.classList.remove("open");
+  body.style.overflow = "auto";
+  body.removeEventListener("touchmove", preventScroll);
 });
 
 function preventScroll(event) {

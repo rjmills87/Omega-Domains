@@ -12,9 +12,9 @@ import gridImg from "../images/border-all-solid.svg";
 import backArrow from "../images/back-arrow.svg";
 ---
 
-<div class="sub-menu-container">
+<div class="sub-menu-container dn-container">
   <div class="wrapper">
-    <img class="back-btn" src={backArrow} alt="back arrow" />
+    <img class="back-btn dn-close" src={backArrow} alt="back arrow" />
     <h2 class="sub-heading">DOMAIN NAMES</h2>
     <div class="nav-links">
       <ol>
@@ -66,18 +66,25 @@ import backArrow from "../images/back-arrow.svg";
 
 <style>
   .sub-menu-container {
-    /* display: block; */
-    display: none;
+    visibility: hidden;
+    opacity: 0;
     position: fixed;
     z-index: 1;
     overflow-x: hidden;
     top: 0;
-    left: 0;
-    background: var(--white);
-    width: 75%;
+    left: 400px;
+    background-color: var(--platinum);
+    width: 25%;
     height: 100vh;
-    transition: 0.5s ease-in-out;
+    transition: 0.7s ease-in-out;
     white-space: nowrap;
+  }
+
+  .sub-menu-container.active {
+    left: 0;
+    width: 75%;
+    visibility: visible;
+    opacity: 1;
   }
 
   .wrapper {

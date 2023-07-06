@@ -12,17 +12,17 @@ import WebsitesHostingMobileMenu from "./Websites&HostingMobileMenu.astro";
 <div class="menu-container">
   <div class="wrapper">
     <div class="top-links">
-  <img class="logo" src={omegaIcon} alt="Omega Domains Logo">
+  <img class="mob-menu-logo" src={omegaIcon} alt="Omega Domains Logo">
       <div class="top-link">
         <span>Domain Names</span>
-        <img src={arrowRight} alt="right arrow" class="arrow" />
+        <img src={arrowRight} alt="right arrow" class="arrow dn-open "  />
       </div>
 <DomainNamesMobileMenu/>
       <div class="top-link">
         <span>Websites & Hosting</span><img
           src={arrowRight}
           alt="right arrow"
-          class="arrow"
+          class="arrow wh-open"
         />
       </div>
 <WebsitesHostingMobileMenu/>
@@ -30,7 +30,7 @@ import WebsitesHostingMobileMenu from "./Websites&HostingMobileMenu.astro";
         <span>Email & Marketing</span><img
           src={arrowRight}
           alt="right arrow"
-          class="arrow"
+          class="arrow em-open"
         />
       </div>
 <EmailMarketingMobileMenu/>
@@ -71,7 +71,7 @@ import WebsitesHostingMobileMenu from "./Websites&HostingMobileMenu.astro";
       background: var(--white);
       width: 0%;
       height: 100vh;
-      transition: 0.5s ease-in-out;
+      transition: 0.7s ease-in-out;
       white-space: nowrap;
     }
 
@@ -87,7 +87,7 @@ import WebsitesHostingMobileMenu from "./Websites&HostingMobileMenu.astro";
       padding-top: 1rem;
     }
 
-    .logo {
+    .mob-menu-logo {
       height: 38px;
       width: 38px;
     }
