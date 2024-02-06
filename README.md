@@ -1,47 +1,33 @@
-# Astro Starter Kit: Minimal
+# Omega Domains Homepage
 
-```
-npm create astro@latest -- --template minimal
-```
+## Overview
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+This was a project that I to undertook in order to become more familiar with using the Astro framework following the completion of their basic blog tutorial. I decided to do a clone of the GoDaddy https://www.godaddy.com/en-uk home page as I quite liked the design and felt the site had some interesting UI elements to build which would help to improve my CSS and Javascript skills.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+#### LIVE LINK : https://omega-domains.netlify.app/
 
-## 🚀 Project Structure
+## FEATURES
 
-Inside of your Astro project, you'll see the following folders and files:
+- Page has been optimized for various display sizes Desktop, Tablets, Smartphones.
 
-```
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+- Mega Menus slide down and fade in when navigation link is clicked.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+- Navigation Menus will display none on scroll.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+- Mobile Navigation slides in from left of screen on click of Primary Navigation link. Sub menus then slide in from the right of the screen when Secondary Navigation links are clicked.
 
-Any static assets, like images, can be placed in the `public/` directory.
+- FAQ Accordion is fully responsive
 
-## 🧞 Commands
+- Legal Policies modal prevents page scroll when active.
 
-All commands are run from the root of the project, from a terminal:
+## Tech Used
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:3000`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+This page was built using Astro Framework : https://astro.build/
 
-## 👀 Want to learn more?
+Fonts from Google Fonts : https://fonts.google.com/
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Icons from Font Awesome : https://fontawesome.com/
+
+Images from Undraw - https://undraw.co/ and Adobe Stock - https://stock.adobe.com/uk/
+
+Site Logos created using Adobe Illustrator
