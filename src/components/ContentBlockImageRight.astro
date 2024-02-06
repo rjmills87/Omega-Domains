@@ -66,6 +66,7 @@ const { titleHeading, textHeading, textContent, btnText, image, imageAltText } =
     margin-right: 3rem;
     padding: 1.5rem;
     border-radius: 5px;
+    float: right;
   }
 
   @media screen and (max-width: 1140px) {
@@ -111,6 +112,15 @@ const { titleHeading, textHeading, textContent, btnText, image, imageAltText } =
     }
 
     .content-img {
+      margin: 0;
+    }
+  }
+
+  /* CSS styles for large displays */
+  @media screen and (min-width: 1500px) {
+    .content-img {
+      width: 900px;
+      height: 600px;
       margin: 0;
     }
   }
